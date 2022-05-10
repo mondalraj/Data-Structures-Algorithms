@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     // Methods of initializing
 	vector<int> arr;
-    vector<int> arr1 = {1, 2, 3, 4, 5};
+    vector<int> arr1 = {1, 12, 30, 4, 5};
 
     // Fill Constructor
     vector<int> arr2(10, 0); // 10 elements in the vector all with value 0
@@ -27,6 +27,10 @@ int main() {
     for(int i=0; i<arr2.size(); i++){
         cout<<arr2[i]<<" ";
     }
+
+    //inbuilt sort function
+    sort(arr1.begin(), arr.end()) //For vector
+    // sort(arr, arr+n) //For array
 
 	return 0;
 }
