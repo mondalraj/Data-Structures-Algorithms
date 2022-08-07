@@ -1,6 +1,6 @@
 # Arrays
 
-### Find Unique `Easy`
+## Find Unique `Easy`
 
 ```
 https://www.codingninjas.com/codestudio/problems/find-unique_625159
@@ -26,7 +26,7 @@ int findUnique(int *arr, int size)
 }
 ```
 
-### Longest Sub-Array with Sum K
+## Longest Sub-Array with Sum K
 
 ```
 https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
@@ -43,88 +43,88 @@ Expected Time Complexity: O(N).
 Expected Auxiliary Space: O(N).
 ```
 
-### Longest Subarray with equal 0s and 1s
+## Longest Subarray with equal 0s and 1s
 
-### Find pair with having sum X in unsorted array
+## Find pair with having sum X in unsorted array
 
-### Reverse an array
+## Reverse an array
 
-### Rotate an array by number by D
+## Rotate an array by number by D
 
-### Replace Elements with Greatest Element on Right Side
+## Replace Elements with Greatest Element on Right Side
 
-### Prefix Sum array
+## Prefix Sum array
 
-### Find Pivot Index or Equilibrium Point
+## Find Pivot Index or Equilibrium Point
 
-### Maximum occurred integer in N ranges
+## Maximum occurred integer in N ranges
 
-### Strongest Neighbour | Find Peak Element
+## Strongest Neighbour | Find Peak Element
 
-### First Missing Positive
+## First Missing Positive
 
-### Rearrange array alternatively
+## Rearrange array alternatively
 
-### Rearrange the array
+## Rearrange the array
 
-### Maximum Index
+## Maximum Index
 
-### Check if array is sorted and rotated
+## Check if array is sorted and rotated
 
-### Trapping Rainwater
+## Trapping Rainwater
 
-### Best Time to Buy and Sell Stock
+## Best Time to Buy and Sell Stock
 
-### Best Time to Buy and Sell Stock II
+## Best Time to Buy and Sell Stock II
 
-### Best Time to Buy and Sell Stock III
+## Best Time to Buy and Sell Stock III
 
-### Sub array Sum Equals K
+## Sub array Sum Equals K
 
-### Minimum Size Sub array Sum
+## Minimum Size Sub array Sum
 
-### Sum of Sub array Minimums
+## Sum of Sub array Minimums
 
-### Maximum Subarray | Kadane Algorithm
+## Maximum Subarray | Kadane Algorithm
 
-### Sliding Window Maximum
+## Sliding Window Maximum
 
-### Maximum Gap
+## Maximum Gap
 
-### Contains Duplicate
+## Contains Duplicate
 
-### Two Sum
+## Two Sum
 
-### Merge Sorted Array
+## Merge Sorted Array
 
-### Intersection of Two Arrays II
+## Intersection of Two Arrays II
 
-### Best Time to Buy and Sell Stock
+## Best Time to Buy and Sell Stock
 
-### Binary Search
+## Binary Search
 
-### Search Insert Position
+## Search Insert Position
 
-### Squares of a Sorted Array
+## Squares of a Sorted Array
 
-### Move Zeroes
+## Move Zeroes
 
-### Two Sum II - Input Array Is Sorted
+## Two Sum II - Input Array Is Sorted
 
-### Left most index of an element
+## Left most index of an element
 
-### Count of occurrences of x in sorted element
+## Count of occurrences of x in sorted element
 
-### Count of 1s in binary sorted array
+## Count of 1s in binary sorted array
 
-### Peak element
+## Peak element
 
-### Find an element in infinite sized sorted array
+## Find an element in infinite sized sorted array
 
-### Square root of an integer
+## Square root of an integer
 
-### Find pair in unsorted array which gives sum X
+## Find pair in unsorted array which gives sum X
 
-### Find pair in sorted array which gives sum X
+## Find pair in sorted array which gives sum X
 
-### Find triplet in an array which gives sum X
+## Find triplet in an array which gives sum X
