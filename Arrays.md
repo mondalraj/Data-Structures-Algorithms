@@ -2,8 +2,9 @@
 
 ## Find Unique `Easy`
 
-```
 https://www.codingninjas.com/codestudio/problems/find-unique_625159
+
+```
 Q. You have been given an integer array/list(ARR) of size N. Where N is equal to [2M + 1].
 Now, in the given array/list, 'M' numbers are present twice and one number is present only once. You need to find and return that number which is unique in the array/list.
 
@@ -28,8 +29,9 @@ int findUnique(int *arr, int size)
 
 ## Unique Number of Occurrences `Easy`
 
-```
 https://leetcode.com/problems/unique-number-of-occurrences/
+
+```
 Q. Given an array of integers arr, return true if the number of occurrences of each value in the array is unique, or false otherwise.
 
 Example:
@@ -72,8 +74,9 @@ public:
 
 ### Find Duplicates in Array
 
-```
 https://www.codingninjas.com/codestudio/problems/duplicate-in-array_893397
+
+```
 Q. You are given an array ‘ARR’ of size ‘N’ containing each number between 1 and ‘N’ - 1 at least once. There is a single integer value that is present in the array twice. Your task is to find the duplicate integer value present in the array.
 
 Example: Consider ARR = [1, 2, 3, 4, 4], the duplicate integer value present in the array is 4. Hence, the answer is 4 in this case.
@@ -82,7 +85,7 @@ Example: Consider ARR = [1, 2, 3, 4, 4], the duplicate integer value present in 
 Approach 1 - Solve using hashset (insert into set if not present in the set, else return the element which is already present)
 
 Approach 2 - Using Bitwise XOR (But can only be use if there is only 1 duplicate element)
-arr ^ arr[1 - N-1] = X (Duplicate Element) :- a ^ a = 0, a ^ 0 = a
+arr ^ arr[1 : N-1] = X (Duplicate Element) :- a ^ a = 0, a ^ 0 = a
 
 ```cpp
 int findDuplicate(vector<int> &arr)
@@ -100,8 +103,9 @@ int findDuplicate(vector<int> &arr)
 
 ## Intersection Of Two Sorted Arrays `Easy`
 
-```
 https://www.codingninjas.com/codestudio/problems/intersection-of-2-arrays_1082149
+
+```
 Q. You are given two arrays 'A' and 'B' of size 'N' and 'M' respectively. Both these arrays are sorted in non-decreasing order. You have to find the intersection of these two arrays.
 Example :
     Input : 6 4
@@ -136,8 +140,9 @@ vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, i
 
 ## Longest Sub-Array with Sum K
 
-```
 https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
+```
 Q. Given an array containing N integers and an integer K., Your task is to find the length of the longest Sub-Array with the sum of the elements equal to the given value K.
 
 Example:
