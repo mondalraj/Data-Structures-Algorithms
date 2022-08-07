@@ -1,89 +1,130 @@
 # Arrays
 
-## <span style="color: #FFC668">Largest Subarray with Sum X</span>
+### Find Unique ==Easy==
 
-## <span style="color: #FFC668">Longest Subarray with equal 0s and 1s</span>
+```
+https://www.codingninjas.com/codestudio/problems/find-unique_625159
+Q. You have been given an integer array/list(ARR) of size N. Where N is equal to [2M + 1].
+Now, in the given array/list, 'M' numbers are present twice and one number is present only once. You need to find and return that number which is unique in the array/list.
 
-## <span style="color: #FFC668">Find pair with having sum X in unsorted array</span>
+Example:
+    Input: 7
+           2 3 1 6 3 6 2
+    Output: 1
+```
 
-## <span style="color: #FFC668">Reverse an array</span>
+> Using XOR operator : a ^ a = 0, a ^ 0 = a, 1 ^ 1 = 0, 0 ^ 1 = 1, 0 ^ 0 = 0
 
-## <span style="color: #FFC668">Rotate an array by number by D</span>
+```cpp
+int findUnique(int *arr, int size)
+{
+    int ans = 0;
+    for (int i = 0; i< size; i++){
+        ans = ans ^ arr[i];
+    }
+    return ans;
+}
+```
 
-## <span style="color: #FFC668">Replace Elements with Greatest Element on Right Side</span>
+### Longest Sub-Array with Sum K
 
-## <span style="color: #FFC668">Prefix Sum array</span>
+```
+https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+Q. Given an array containing N integers and an integer K., Your task is to find the length of the longest Sub-Array with the sum of the elements equal to the given value K.
 
-## <span style="color: #FFC668">Find Pivot Index or Equilibrium Point</span>
+Example:
+    Input :
+        A[] = {10, 5, 2, 7, 1, 9}
+        K = 15
+    Output : 4
+    Explanation: The sub-array is {5, 2, 7, 1}.
 
-## <span style="color: #FFC668">Maximum occurred integer in N ranges</span>
+Expected Time Complexity: O(N).
+Expected Auxiliary Space: O(N).
+```
 
-## <span style="color: #FFC668">Strongest Neighbour | Find Peak Element</span>
+### Longest Subarray with equal 0s and 1s
 
-## <span style="color: #FFC668">First Missing Positive</span>
+### Find pair with having sum X in unsorted array
 
-## <span style="color: #FFC668">Rearrange array alternatively</span>
+### Reverse an array
 
-## <span style="color: #FFC668">Rearrange the array</span>
+### Rotate an array by number by D
 
-## <span style="color: #FFC668">Maximum Index</span>
+### Replace Elements with Greatest Element on Right Side
 
-## <span style="color: #FFC668">Check if array is sorted and rotated</span>
+### Prefix Sum array
 
-## <span style="color: #FFC668">Trapping Rainwater</span>
+### Find Pivot Index or Equilibrium Point
 
-## <span style="color: #FFC668">Best Time to Buy and Sell Stock</span>
+### Maximum occurred integer in N ranges
 
-## <span style="color: #FFC668">Best Time to Buy and Sell Stock II</span>
+### Strongest Neighbour | Find Peak Element
 
-## <span style="color: #FFC668">Best Time to Buy and Sell Stock III</span>
+### First Missing Positive
 
-## <span style="color: #FFC668">Sub array Sum Equals K</span>
+### Rearrange array alternatively
 
-## <span style="color: #FFC668">Minimum Size Sub array Sum</span>
+### Rearrange the array
 
-## <span style="color: #FFC668">Sum of Sub array Minimums</span>
+### Maximum Index
 
-## <span style="color: #FFC668">Maximum Subarray | Kadane Algorithm</span>
+### Check if array is sorted and rotated
 
-## <span style="color: #FFC668">Sliding Window Maximum</span>
+### Trapping Rainwater
 
-## <span style="color: #FFC668">Maximum Gap</span>
+### Best Time to Buy and Sell Stock
 
-## <span style="color: #FFC668">Contains DUplicate</span>
+### Best Time to Buy and Sell Stock II
 
-## <span style="color: #FFC668">Two Sum</span>
+### Best Time to Buy and Sell Stock III
 
-## <span style="color: #FFC668">Merge Sorted Array</span>
+### Sub array Sum Equals K
 
-## <span style="color: #FFC668">Intersection of Two Arrays II</span>
+### Minimum Size Sub array Sum
 
-## <span style="color: #FFC668">Best Time to Buy and Sell Stock</span>
+### Sum of Sub array Minimums
 
-## <span style="color: #FFC668">Binary Search</span>
+### Maximum Subarray | Kadane Algorithm
 
-## <span style="color: #FFC668">Search Insert Position</span>
+### Sliding Window Maximum
 
-## <span style="color: #FFC668">Squares of a Sorted Array</span>
+### Maximum Gap
 
-## <span style="color: #FFC668">Move Zeroes</span>
+### Contains Duplicate
 
-## <span style="color: #FFC668">Two Sum II - Input Array Is Sorted</span>
+### Two Sum
 
-## <span style="color: #FFC668">Left most index of an element</span>
+### Merge Sorted Array
 
-## <span style="color: #FFC668">Count of occurrences of x in sorted element</span>
+### Intersection of Two Arrays II
 
-## <span style="color: #FFC668">Count of 1s in binary sorted array</span>
+### Best Time to Buy and Sell Stock
 
-## <span style="color: #FFC668">Peak element</span>
+### Binary Search
 
-## <span style="color: #FFC668">Find an element in infinite sized sorted array</span>
+### Search Insert Position
 
-## <span style="color: #FFC668">Square root of an integer</span>
+### Squares of a Sorted Array
 
-## <span style="color: #FFC668">Find pair in unsorted array which gives sum X</span>
+### Move Zeroes
 
-## <span style="color: #FFC668">Find pair in sorted array which gives sum X</span>
+### Two Sum II - Input Array Is Sorted
 
-## <span style="color: #FFC668">Find triplet in an array which gives sum X</span>
+### Left most index of an element
+
+### Count of occurrences of x in sorted element
+
+### Count of 1s in binary sorted array
+
+### Peak element
+
+### Find an element in infinite sized sorted array
+
+### Square root of an integer
+
+### Find pair in unsorted array which gives sum X
+
+### Find pair in sorted array which gives sum X
+
+### Find triplet in an array which gives sum X
