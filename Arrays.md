@@ -73,12 +73,13 @@ public:
 ### Find Duplicates in Array
 
 ```
-You are given an array ‘ARR’ of size ‘N’ containing each number between 1 and ‘N’ - 1 at least once. There is a single integer value that is present in the array twice. Your task is to find the duplicate integer value present in the array.
+https://www.codingninjas.com/codestudio/problems/duplicate-in-array_893397
+Q. You are given an array ‘ARR’ of size ‘N’ containing each number between 1 and ‘N’ - 1 at least once. There is a single integer value that is present in the array twice. Your task is to find the duplicate integer value present in the array.
 
 Example: Consider ARR = [1, 2, 3, 4, 4], the duplicate integer value present in the array is 4. Hence, the answer is 4 in this case.
 ```
 
-Approach 1 - Solve using hashset (insert into set if not present in the set, else return the element which ia already present)
+Approach 1 - Solve using hashset (insert into set if not present in the set, else return the element which is already present)
 
 Approach 2 - Using Bitwise XOR (But can only be use if there is only 1 duplicate element)
 arr ^ arr[1 - N-1] = X (Duplicate Element) :- a ^ a = 0, a ^ 0 = a
@@ -94,6 +95,42 @@ int findDuplicate(vector<int> &arr)
         ans = ans ^ i;
     }
 	return ans;
+}
+```
+
+## Intersection Of Two Sorted Arrays `Easy`
+
+```
+https://www.codingninjas.com/codestudio/problems/intersection-of-2-arrays_1082149
+Q. You are given two arrays 'A' and 'B' of size 'N' and 'M' respectively. Both these arrays are sorted in non-decreasing order. You have to find the intersection of these two arrays.
+Example :
+    Input : 6 4
+            1 2 2 2 3 4
+            2 2 3 3
+    Output : 2 2 3
+
+Expected Time Complexity : O(max (M, N))
+```
+
+> Using two pointers approach
+
+```cpp
+vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
+{
+	vector<int> ans;
+    int i = 0, j = 0;
+    while(i< n && j< m){
+        if(arr1[i] == arr2[j]){
+            ans.push_back(arr1[i]);
+            i++;
+            j++;
+        }else if(arr1[i] < arr2[j]){
+            i++;
+        }else{
+            j++;
+        }
+    }
+    return ans;
 }
 ```
 
