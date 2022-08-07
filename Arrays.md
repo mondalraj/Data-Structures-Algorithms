@@ -26,6 +26,77 @@ int findUnique(int *arr, int size)
 }
 ```
 
+## Unique Number of Occurrences `Easy`
+
+```
+https://leetcode.com/problems/unique-number-of-occurrences/
+Q. Given an array of integers arr, return true if the number of occurrences of each value in the array is unique, or false otherwise.
+
+Example:
+    Input: arr = [1, 2, 2, 1, 1, 3]
+    Output: true
+    Explanation: The value 1 has 3 occurrences, 2 has 2 and 3 has 1. No two values have the same number of occurrences.
+```
+
+> Using unordered_map : Storing frequencies of occurences
+> Using unordered_set : For finding the duplicate frequencies
+
+```cpp
+class Solution {
+public:
+    bool uniqueOccurrences(vector<int>& arr) {
+        unordered_map<int, int> map;
+        unordered_set<int> occurrences;
+        for(auto i = arr.begin(); i!=arr.end(); i++){
+            auto it = map.find(*i);
+            if(it != map.end()){
+                (*it).second += 1;
+            } else {
+                map.insert(make_pair(*i, 1));
+            }
+        }
+        for (auto x : map){
+            // Storing values(occurrences) in hashset -> removes duplicates
+            occurrences.insert(x.second);
+        }
+        if(map.size() == occurrences.size()){
+            return true;
+        }else {
+            return false;
+        }
+    }
+};
+```
+
+> Similar Question:
+
+### Find Duplicates in Array
+
+```
+You are given an array ‘ARR’ of size ‘N’ containing each number between 1 and ‘N’ - 1 at least once. There is a single integer value that is present in the array twice. Your task is to find the duplicate integer value present in the array.
+
+Example: Consider ARR = [1, 2, 3, 4, 4], the duplicate integer value present in the array is 4. Hence, the answer is 4 in this case.
+```
+
+Approach 1 - Solve using hashset (insert into set if not present in the set, else return the element which ia already present)
+
+Approach 2 - Using Bitwise XOR (But can only be use if there is only 1 duplicate element)
+arr ^ arr[1 - N-1] = X (Duplicate Element) :- a ^ a = 0, a ^ 0 = a
+
+```cpp
+int findDuplicate(vector<int> &arr)
+{
+    int ans = 0;
+    for (int i=0; i<arr.size(); i++){
+        ans = ans ^ arr[i];
+    }
+    for (int i=1; i< arr.size(); i++){
+        ans = ans ^ i;
+    }
+	return ans;
+}
+```
+
 ## Longest Sub-Array with Sum K
 
 ```
