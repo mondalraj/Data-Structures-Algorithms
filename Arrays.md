@@ -1,6 +1,6 @@
 # Arrays
 
-### Find Unique ==Easy==
+### Find Unique `Easy`
 
 ```
 https://www.codingninjas.com/codestudio/problems/find-unique_625159
