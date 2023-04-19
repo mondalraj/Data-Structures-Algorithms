@@ -1,6 +1,6 @@
 # Data Structures and Algorithms in `Java`
 
-# Low Level System Design (OOPs)
+# System Design
 
 # Operating System (OS)
 
