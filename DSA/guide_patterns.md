@@ -18,12 +18,14 @@
 
 - Backtracking
 
+- Hash Tables(HashMaps), Sets(HashSets)
+
+- Trees (Binary Search Tree)
+
 - Greedy
 
 - Dynamic Programming
 
 - Bit Manipulation
-
-- Trees (Binary Search Tree)
 
 - Graphs
